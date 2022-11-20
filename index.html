@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title>
+    <script src="https://kit.fontawesome.com/fa116c38dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Estilo.css"/>
+    
+</head>
+
+<body>
+    <header>
+      <div class="header">
+          <div>
+              <img src="img/IMG_20220902_072227217.jpg" align ="left" class="box-img"/>
+          </div>
+          <div>
+              <h1>Mi<b>Blog</b></h1> 
+              <h2>Jorge Leonardo Vasquez Rangel</h2>
+              <h2>Estudiante de Ingeniería informática en la Unir</h2>
+          </div>
+              
+    </div>
+  </header>
+  
+  <div class="EjerJavascript">
+      <div>
+        <h4>Ejercicios JavaScript</h4>
+        <label for="text">PALINDROMO:  </label>
+        <input id="text" autocomplete="off" onkeyup="palindrome()" />
+        <small id="answer"><br><br>
+      </div>
+        
+      <div>
+        <h4>NUMERO MAYOR</h4>
+        <label>INGRESE NUMERO 1:   </label>
+        <input type="number" id="num1 "/><br><br>
+      
+        <label>INGRESE NUMERO 2:   </label>
+        <input type="number" id="num2 "/><br>
+        <button type="button" onclick="Mayor()">Ver Resultado</button><br><br>
+      </div>
+      <div>
+        <h4>MOSTRAR VOCALES</h4>
+        <label>INGRESE UNA FRASE: </label>
+        <input type="text" id="frase"><br>
+        <button type="button" onclick="frase()">Ver Resultado</button><br><br>
+      </div>
+
+      <div>
+        <h4>CONTAR VOCALES</h4>
+        <label>INGRESE UNA FRASE: </label>
+        <input type="text" id="cadena"><br>
+        <button type="button" onclick="contarVocales()">Ver Resultado</button><br><br>
+      </div>
+  </div>
+ 
+	<div class="EjerAjax">
+    <form action="#">
+      <input type="text" id="recurso" size="70" />
+      <input type="button" id="enviar" value="Mostrar contenidos de la URL" />
+      </form>
+       
+      <div id="principal">
+        <h2>Contenidos del archivo:</h2>
+        <div id="contenidos"></div>
+       
+        <h2>Cabeceras HTTP de la respuesta del servidor:</h2>
+        <div id="cabeceras"></div>
+      </div>
+       
+      <div id="secundario">
+        <h2>Estados de la petición:</h2>
+        <div id="estados"></div>
+       
+        <h2>Código de estado:</h2>
+        <div id="codigo"></div>
+      </div>
+  </div>
+  
+  <div class="footer">
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><i class="fa-brands fa-facebook redes-footer"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram redes-footer"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter redes-footer"></i></a>
+        </div>
+        <hr>
+        <h4>2022 Miblog - Todos los derechos reservados</h4>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>
